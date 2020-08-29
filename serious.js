@@ -25,18 +25,35 @@ if (x <= Math.floor(n / 2)) {
 Write a script to check if a number is even or odd 
 */
 
-let num = prompt('Enter a number: ');
+let num = prompt("Enter a number: ");
 if (num % 2 == 0) {
-    alert(num + " is an even number.");
+  alert(num + " is an even number.");
 } else {
-    alert(num + " is an odd number.");
-};
+  alert(num + " is an odd number.");
+}
 
 /* Question 10
 Write a script to calculate a person's BMI, and use that information to sort people into categories.
 */
 
-let weight = prompt('Enter your weight in kg: ');
-let height = prompt('Enter your height in cm: ')/100;
-let bmi = weight / (height*height);
+let weight = prompt("Enter your weight in kg: ");
+let height = prompt("Enter your height in cm: ") / 100;
 
+let bmi = weight / (height * height);
+let verdict;
+
+if (bmi < 16) {
+  verdict = "severly underweight";
+} else if (bmi < 18.5) {
+  verdict = "underweight";
+} else if (bmi < 25) {
+  verdict = "normal";
+} else if (bmi < 30) {
+  verdict = "overweight";
+} else {
+  verdict = "obese";
+}
+
+alert(
+  "Your BMI is " + Math.round(bmi * 100) / 100 + " and you are " + verdict + "."
+);
