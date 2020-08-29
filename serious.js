@@ -21,3 +21,22 @@ if (x <= Math.floor(n / 2)) {
   alert("Upper half of 0-" + n + " range.");
 }
 
+/* Question 8
+Write a script to check if a number is even or odd 
+*/
+
+let num = prompt('Enter a number: ');
+if (num % 2 == 0) {
+    alert(num + " is an even number.");
+} else {
+    alert(num + " is an odd number.");
+};
+
+/* Question 10
+Write a script to calculate a person's BMI, and use that information to sort people into categories.
+*/
+
+let weight = prompt('Enter your weight in kg: ');
+let height = prompt('Enter your height in cm: ')/100;
+let bmi = weight / (height*height);
+
