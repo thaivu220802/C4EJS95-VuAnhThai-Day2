@@ -32,6 +32,57 @@ if (num % 2 == 0) {
   alert(num + " is an odd number.");
 }
 
+/* Question 9
+Write a program to print out
+a. 6 L's and H's, 3 L's and 3 H's */
+
+for (let i = 1; i <= 3; i++) {
+  console.log("L");
+}
+
+for (let j = 1; j <= 3; j++) {
+  console.log("H");
+}
+
+/* b.	n L’s and H’s in total, n entered by user */
+
+let n = prompt("Enter the total number of L's and H's:");
+
+for (let i = 1; i <= Math.floor(n / 2) + 1; i++) {
+  console.log("L");
+}
+
+for (let j = 1; j <= Math.floor(n / 2); j++) {
+  console.log("H");
+}
+
+/* c.	8 1’s and 0’s in total, consecutively */
+
+for (let i = 1; i <= 8; i++) {
+  switch (i % 2) {
+    case 0:
+      console.log(1);
+      break;
+    case 1:
+      console.log(0);
+      break;
+  }
+}
+
+/* d. n 1’s and 0’s in total, consecutively, n entered by user */
+
+let n = prompt("Enter n: ");
+for (let i = 1; i <= n; i++) {
+  switch (i % 2) {
+    case 0:
+      console.log(1);
+      break;
+    case 1:
+      console.log(0);
+      break;
+  }
+}
+
 /* Question 10
 Write a script to calculate a person's BMI, and use that information to sort people into categories.
 */
