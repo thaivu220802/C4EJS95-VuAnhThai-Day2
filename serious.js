@@ -154,7 +154,7 @@ const n = prompt('Enter the number of edges:');
 
 for (let i = 1; i <= n; i ++){
     fd(50);
-    rt(180*(n-2)/n);
+    rt(180-(180*(n-2)/n));
 }
 
 /* Question 12.
@@ -163,9 +163,9 @@ for (let i = 1; i <= n; i ++){
 
 const n = prompt('How many polygons?');;
 
-for (let i = 3; i <= n+2; i ++){
+for (let i = 3; i <= parseInt(n)+2; i ++){
     for (let j = 1; j <= i; j++){
         fd(50);
-        rt(180*(i-2)/i);
+        rt(180-(180*(i-2)/i));
     }
 }
