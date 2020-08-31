@@ -29,7 +29,8 @@ console.log(numEven);
 // the Name is blank or not and if the Password violates any
 // of the following criteria: (1) at least 6 characters (2) fewer than 20 characters.
 // If the Name and the Password not violate any of those criteria, provide the user with an alert that their
-// registration was successful. */
+// registration was successful.
+*/
 
 let userName = prompt("Enter your name: ");
 while (!userName) {
